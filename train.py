@@ -36,6 +36,6 @@ accuracy = accuracy_score(y_test, y_pred)
 
 
 # Save the trained model using joblib
-##
+###
 joblib.dump(logreg_sklearn, 'data/logreg_model.pkl')
 
