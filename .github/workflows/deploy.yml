@@ -36,16 +36,16 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        docker build -t Churn-Rodolphe .
+        docker build -t churn-Rodolphe .
       
     - name: Run Tests in Docker
       run: |
-        docker run Churn-Rodolphe pytest -v
+        docker run churn-Rodolphe pytest -v
 
     - name: Initialize Elastic Beanstalk Application
       run: |
-        eb init -p docker Churn-Rodolphe --region eu-west-1
+        eb init -p docker churn-Rodolphe --region eu-west-1
 
     - name: Deploy to Elastic Beanstalk
       run: |
-        eb deploy Churn-Rodolphe-env
+        eb deploy churn-Rodolphe-env
