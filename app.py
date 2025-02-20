@@ -2,7 +2,11 @@ from flask import Flask, request, jsonify, render_template
 import joblib
 import numpy as np 
 
+<<<<<<< HEAD
 #####Charger le modèle
+=======
+###Charger le modèle
+>>>>>>> 838fb75059ee22d8251638d3c4bd890673d2766b
 model = joblib.load('data/logreg_model.pkl')
 
 # Initialiser l'application Flask
